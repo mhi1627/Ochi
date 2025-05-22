@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.body {
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 100%;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'FoundersGrotesk';
+    src: url(../public/Fonts/FoundersGrotesk-Semibold.woff) format('woff2')
+  }
+  @font-face {
+    font-family: 'FoundersGrotesk2';
+    src: url(../public/Fonts/FoundersGrotesk-Semibold.woff) format('woff')
+  }
+  @font-face {
+    font-family: 'icomoon';
+    src: url(../public/Fonts/icomoon.woff) format('woff')
+  }
+  @font-face {
+    font-family: 'NeueMontreal';
+    src: url(../public/Fonts/NeueMontreal-Regular.woff) format('woff2')
+  }
+}
+
+@layer utilities {
+  .foundersGrotesk {
+   font-family: 'FoundersGrotesk';
+  }
+  .icomoon {
+   font-family: 'icomoon';
+  }
+  .NeueMontreal {
+   font-family: 'NeueMontreal';
+  }
+  .foundersGrotesk2 {
+   font-family: 'FoundersGrotesk2';
+  }
+}
