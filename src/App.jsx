@@ -3,7 +3,7 @@ import Hero from './Hero'
 export default function App() {
   return (
  <>
-  <Navbar></Navbar> 
+  <Navbar></Navbar>
   <Hero></Hero>
  </>
   )
