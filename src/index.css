@@ -48,3 +48,15 @@
     font-size: 9rem;
   }
 }
+
+
+@keyframes crawl {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-100%,0,0);
+  }
+}
+
+
