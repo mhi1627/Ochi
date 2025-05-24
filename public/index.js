@@ -1,4 +1,4 @@
 
 import contentImg from "./Imgs/content-image01.jpg"
-
-export {contentImg}
+import homePagePhoto from "./Imgs/Homepage-Photo.jpg"
+export {contentImg, homePagePhoto}
