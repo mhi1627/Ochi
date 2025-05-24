@@ -5,29 +5,29 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export default function Hero() {
   return (
     <div className='relative h-screen w-full mt-8 overflow-hidden '>
-      <div id='headings' className='px-3 xl:p-16 xl:mt-7  '>
+      <div id='headings' className='px-3 xl:p-16 xl:mt-0 lg:mt-10 '>
         {["We create", "Eye-opening", "presentations"].map((heading,index)=>(
           <div className=''>
             {index === 1 ?
             <span className='relative before:absolute flex gap-2 items-end '>
-             <div className='rounded-lg overflow-hidden w-1/10'>
-              <img src={contentImg} alt="" className=' object-cover lg:h-[5.6rem] md:h-[5rem] sm:h-[3.6rem] h-[2.5rem] xl:h-[7.3rem]' />
+             <div className='rounded-lg overflow-hidden xl:w-1/10'>
+              <img src={contentImg} alt="" className=' object-cover lg:h-[4rem] md:h-[3.6rem] sm:h-[3.6rem] h-[2.5rem] xl:h-[5rem]' />
               </div> 
-            <h1 className=' text-nowrap text-[4rem] leading-12 sm:text-[6rem] sm:leading-16 md:text-[8rem] md:leading-23  lg:text-[9rem] lg:leading-26 xl:text-[11rem] xl:leading-33  uppercase foundersGrotesk  '>{heading}</h1>
+            <h1 className=' text-nowrap text-[4rem] leading-12 sm:text-[6rem] sm:leading-16 md:text-[6rem] md:leading-18  lg:text-[6rem] lg:leading-18 xl:text-[8.5rem] xl:leading-24  uppercase foundersGrotesk  '>{heading}</h1>
             </span> :
-            <h1 className='text-[4rem] leading-12 sm:text-[6rem] sm:leading-16 md:text-[8rem] md:leading-23  lg:text-[9rem] lg:leading-26 xl:text-[11rem]  xl:leading-33 uppercase foundersGrotesk  '>{heading}</h1>
+            <h1 className='text-[4rem] leading-12 sm:text-[6rem] sm:leading-16 md:text-[6rem] md:leading-18  lg:text-[6rem] lg:leading-18 xl:text-[8.5rem]  xl:leading-24 uppercase foundersGrotesk  '>{heading}</h1>
             }
           </div>
         ))}
       </div>
-      <div className='lg:flex justify-between mt-[9.5rem] xl:mt-[5rem] border-t  border-gray-400 px-[4rem] py-[1.4rem]'>
-          <h3 className='text-[1.3rem]'>For public and private companies</h3>
-          <h3 className='text-[1.3rem]'>From the first pitch to IPO</h3>
-         <span className='flex items-center gap-2'>
-         <button className='uppercase text-[1.2rem] rounded-4xl border p-1 px-3 border-black '>
+      <div className='md:flex items-center gap-5 justify-between mt-[9.5rem] xl:mt-[5rem] border-t  border-gray-400 lg:px-[4rem] px-5  py-[1.4rem]'>
+          <h3 className=' xl:text-[1.3rem]  mb-6 NeueMontreal'>For public and private companies</h3>
+          <h3 className='xl:text-[1.3rem] mb-6 NeueMontreal'>From the first pitch to IPO</h3>
+         <span className='flex  items-center gap-2 mb-6 '>
+         <button className='uppercase xl:text-[1.2rem] rounded-4xl border p-1 px-3 border-black NeueMontreal  '>
           Start the Project
          </button>
-           <span className='border flex items-center  border-black rounded-full '>
+           <span className='border items-center hidden md:flex border-black rounded-full '>
            <IoIosArrowRoundForward className='w-9 h-9 -rotate-45'/>
            </span>
          </span>
